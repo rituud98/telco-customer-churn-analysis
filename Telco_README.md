@@ -1,16 +1,12 @@
-# 📡 Telco Customer Churn Analysis Dashboard
+# Telco Customer Churn Analysis Dashboard
 
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Excel](https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
-
-## 📌 Project Overview
+## Project Overview
 
 An end-to-end data analytics project analyzing customer churn behavior for a telecom company. The project covers data cleaning in Excel, business insights using SQL (PostgreSQL), and an interactive Power BI dashboard — helping the business identify **why customers leave** and **what can be done to retain them**.
 
 ---
 
-## 🎯 Business Problem
+## Business Problem
 
 The telecom company is losing customers every month. Management wants to understand:
 - What is the overall churn rate?
@@ -21,7 +17,7 @@ The telecom company is losing customers every month. Management wants to underst
 
 ---
 
-## 🛠️ Tools Used
+##  Tools Used
 
 | Tool | Purpose |
 |---|---|
@@ -31,7 +27,7 @@ The telecom company is losing customers every month. Management wants to underst
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 - **Source:** [Telco Customer Churn — Kaggle (IBM Dataset)](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 - **Rows:** 7,043 customers
@@ -39,7 +35,7 @@ The telecom company is losing customers every month. Management wants to underst
 
 ---
 
-## 🧹 Step 1 — Data Cleaning (Excel)
+## Step 1 — Data Cleaning (Excel)
 
 - Handled blank values in `TotalCharges` column
 - Added **SeniorCitizen_Label** column: converted 0/1 to Yes/No for readability
@@ -51,7 +47,7 @@ The telecom company is losing customers every month. Management wants to underst
 
 ---
 
-## 🔍 Step 2 — SQL Analysis (PostgreSQL)
+##  Step 2 — SQL Analysis (PostgreSQL)
 
 Key business questions answered using SQL:
 
@@ -94,7 +90,7 @@ GROUP BY Churn;
 
 ---
 
-## 📊 Step 3 — Power BI Dashboard
+## Step 3 — Power BI Dashboard
 
 ### KPI Cards
 | Metric | Value |
@@ -119,7 +115,7 @@ GROUP BY Churn;
 
 ---
 
-## 💡 Key Insights
+##  Key Insights
 
 - Overall churn rate is **26.54%** — more than 1 in 4 customers are leaving
 - **Month-to-month contract** customers churn the most (43%) compared to One year (11%) and Two year (3%) — long term contracts significantly improve retention
@@ -128,49 +124,20 @@ GROUP BY Churn;
 - Churned customers pay **$74 avg monthly** vs retained customers at **$61** — higher charges are linked to churn
 - Customers in **0–12 months tenure** group churn the most (47) — new customers are at highest risk
 
----
-
-## 📁 Project Structure
-
-```
-Telco-Customer-Churn-Analysis/
-│
-├── data/
-│   └── telco_clean.csv
-│
-├── sql/
-│   └── telco_clean_sql_queries.sql
-│
-├── dashboard/
-│   └── Telco_Customer_Churn_Dashboard.pbix
-│
-├── screenshots/
-│   └── dashboard_preview.png
-│
-└── README.md
-```
 
 ---
 
-## 📸 Dashboard Preview
+## Dashboard Preview
 
-![Dashboard Preview](screenshots/dashboard_preview.png)
+<img width="1366" height="768" alt="Screenshot (38)" src="https://github.com/user-attachments/assets/017abd0d-7917-45cf-99f7-47957550b7b7" />
 
----
-
-## 👩‍💻 Author
-
-**Ritu Das**
-- 📧 dasritu056@gmail.com
-- 💼 [LinkedIn](#)
-- 🐙 [GitHub](https://github.com/rituud98)
 
 ---
 
-## 🚀 How to Run This Project
+## How to Run This Project
 
-1. Download `telco_clean.csv` from the `data/` folder
-2. Import into PostgreSQL using the script in `sql/` folder
+1. Download `telco_clean.csv` 
+2. Import into PostgreSQL using the script 
 3. Open `Telco_Customer_Churn_Dashboard.pbix` in Power BI Desktop
 4. Refresh the data source to point to your local CSV file
 5. Explore the interactive dashboard using slicers!
