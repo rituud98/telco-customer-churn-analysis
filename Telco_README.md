@@ -84,7 +84,8 @@ FROM telco
 GROUP BY Contract
 ORDER BY Churn_Rate_Pct DESC;
 ```
-<img width="507" height="101" alt="Screenshot (46)" src="https://github.com/user-attachments/assets/c068730d-bf2c-45df-b69b-d10536eb22b2" />
+<img width="500" height="122" alt="image" src="https://github.com/user-attachments/assets/fbdddfe0-aa74-43ce-a1ba-29297e48e4c7" />
+
 
 ```sql
 -- Churn by Internet Service
@@ -97,7 +98,8 @@ FROM telco
 GROUP BY InternetService
 ORDER BY Churn_Rate_Pct DESC;
 ```
-<img width="502" height="97" alt="Screenshot (47)" src="https://github.com/user-attachments/assets/e68a9cab-bb93-47d4-b3d0-609764d915eb" />
+<img width="507" height="119" alt="image" src="https://github.com/user-attachments/assets/8981469e-1465-49b5-a282-7d4ac9652acf" />
+
 
 ```sql
 -- Churn by Tenure Group
