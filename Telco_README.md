@@ -129,7 +129,8 @@ GROUP BY Churn;
 
 ## Dashboard Preview
 
-<img width="1366" height="768" alt="Screenshot (38)" src="https://github.com/user-attachments/assets/017abd0d-7917-45cf-99f7-47957550b7b7" />
+<img width="740" height="472" alt="Dashboard_preview (2)" src="https://github.com/user-attachments/assets/054a53ce-4a8d-4dcb-ac2b-8e403aa0a6bd" />
+
 
 
 ---
