@@ -58,7 +58,21 @@ SELECT
     SUM(Churn_Value) AS Total_Churned,
     ROUND(AVG(Churn_Value::NUMERIC) * 100, 2) AS Churn_Rate_Pct
 FROM telco;
+```
+<img width="381" height="77" alt="Screenshot (44)" src="https://github.com/user-attachments/assets/7c7d2035-6ddf-4124-bf0a-12c9055698fb" />
+```sql
+-- Churn by Gender
+SELECT 
+    gender,
+    COUNT(*) AS Total_Customers,
+    SUM(Churn_Value) AS Churned,
+    ROUND(AVG(Churn_Value::NUMERIC) * 100, 2) AS Churn_Rate_Pct
+FROM telco
+GROUP BY gender;
+```
+<img width="498" height="102" alt="Screenshot (45)" src="https://github.com/user-attachments/assets/6f84520b-801c-4a00-888b-901b21061b09" />
 
+```sql
 -- Churn by Contract Type
 SELECT 
     Contract,
@@ -68,7 +82,36 @@ SELECT
 FROM telco
 GROUP BY Contract
 ORDER BY Churn_Rate_Pct DESC;
+```
+<img width="507" height="101" alt="Screenshot (46)" src="https://github.com/user-attachments/assets/c068730d-bf2c-45df-b69b-d10536eb22b2" />
 
+```sql
+-- Churn by Internet Service
+SELECT 
+    InternetService,
+    COUNT(*) AS Total_Customers,
+    SUM(Churn_Value) AS Churned,
+    ROUND(AVG(Churn_Value::NUMERIC) * 100, 2) AS Churn_Rate_Pct
+FROM telco
+GROUP BY InternetService
+ORDER BY Churn_Rate_Pct DESC;
+```
+<img width="502" height="97" alt="Screenshot (47)" src="https://github.com/user-attachments/assets/e68a9cab-bb93-47d4-b3d0-609764d915eb" />
+
+```sql
+-- Churn by Tenure Group
+SELECT 
+    Tenure_Group,
+    COUNT(*) AS Total_Customers,
+    SUM(Churn_Value) AS Churned,
+    ROUND(AVG(Churn_Value::NUMERIC) * 100, 2) AS Churn_Rate_Pct
+FROM telco
+GROUP BY Tenure_Group
+ORDER BY Churn_Rate_Pct DESC;
+```
+<img width="497" height="167" alt="Screenshot (48)" src="https://github.com/user-attachments/assets/ebc3fa29-5b7f-4429-8b1b-93f7c040cdd5" />
+
+```sql
 -- Churn by Payment Method
 SELECT 
     PaymentMethod,
@@ -78,7 +121,21 @@ SELECT
 FROM telco
 GROUP BY PaymentMethod
 ORDER BY Churn_Rate_Pct DESC;
+```
+<img width="512" height="138" alt="Screenshot (49)" src="https://github.com/user-attachments/assets/188cfccf-65d1-4d72-a9e8-c9b3a239eff9" />
+```sql
+-- Churn by Senior Citizen
+SELECT 
+    SeniorCitizen_Label AS Senior_Citizen,
+    COUNT(*) AS Total_Customers,
+    SUM(Churn_Value) AS Churned,
+    ROUND(AVG(Churn_Value::NUMERIC) * 100, 2) AS Churn_Rate_Pct
+FROM telco
+GROUP BY SeniorCitizen_Label;
+```
+<img width="493" height="87" alt="image" src="https://github.com/user-attachments/assets/86943528-0616-4f0d-bbd1-6ff2c0f98f28" />
 
+```sql
 -- Average Monthly Charges (Churned vs Retained)
 SELECT 
     Churn,
@@ -87,6 +144,33 @@ SELECT
 FROM telco
 GROUP BY Churn;
 ```
+<img width="467" height="94" alt="image" src="https://github.com/user-attachments/assets/750bb2b2-6c4f-4ffb-ac52-e2715c624746" />
+```sql
+-- Churn by Charge Category:
+SELECT 
+    Charge_Category,
+    COUNT(*) AS Total_Customers,
+    SUM(Churn_Value) AS Churned,
+    ROUND(AVG(Churn_Value::NUMERIC) * 100, 2) AS Churn_Rate_Pct
+FROM telco
+GROUP BY Charge_Category
+ORDER BY Churn_Rate_Pct DESC;
+```
+<img width="500" height="154" alt="image" src="https://github.com/user-attachments/assets/8eb462ba-b5fb-4e2c-99e5-a61b97788efc" />
+```sql
+-- Churn by Tech Support and Online Security
+SELECT 
+    TechSupport,
+    OnlineSecurity,
+    COUNT(*) AS Total_Customers,
+    SUM(Churn_Value) AS Churned,
+    ROUND(AVG(Churn_Value::NUMERIC) * 100, 2) AS Churn_Rate_Pct
+FROM telco
+GROUP BY TechSupport, OnlineSecurity
+ORDER BY Churn_Rate_Pct DESC;
+```
+<img width="645" height="168" alt="image" src="https://github.com/user-attachments/assets/eea6a18b-4b6d-4973-ad89-b71b05212a63" />
+
 
 ---
 
