@@ -60,6 +60,7 @@ SELECT
 FROM telco;
 ```
 <img width="381" height="77" alt="Screenshot (44)" src="https://github.com/user-attachments/assets/7c7d2035-6ddf-4124-bf0a-12c9055698fb" />
+
 ```sql
 -- Churn by Gender
 SELECT 
