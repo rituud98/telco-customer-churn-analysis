@@ -123,6 +123,7 @@ GROUP BY PaymentMethod
 ORDER BY Churn_Rate_Pct DESC;
 ```
 <img width="512" height="138" alt="Screenshot (49)" src="https://github.com/user-attachments/assets/188cfccf-65d1-4d72-a9e8-c9b3a239eff9" />
+
 ```sql
 -- Churn by Senior Citizen
 SELECT 
@@ -145,6 +146,7 @@ FROM telco
 GROUP BY Churn;
 ```
 <img width="467" height="94" alt="image" src="https://github.com/user-attachments/assets/750bb2b2-6c4f-4ffb-ac52-e2715c624746" />
+
 ```sql
 -- Churn by Charge Category:
 SELECT 
@@ -157,6 +159,7 @@ GROUP BY Charge_Category
 ORDER BY Churn_Rate_Pct DESC;
 ```
 <img width="500" height="154" alt="image" src="https://github.com/user-attachments/assets/8eb462ba-b5fb-4e2c-99e5-a61b97788efc" />
+
 ```sql
 -- Churn by Tech Support and Online Security
 SELECT 
